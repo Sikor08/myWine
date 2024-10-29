@@ -1,0 +1,134 @@
+header{
+    height: 30px;
+}
+.headerWrap {
+    width: 100%;
+    position: fixed;
+    background-color: ivory;
+    z-index: 2;
+}
+.hamMenu {
+    width: 100%;
+    height: 200vh;
+    background-color: ivory;
+    position: absolute;
+    top: -40px;
+    left: 100%;
+    transition-duration: 1s;
+    z-index: 3;
+    overflow: scroll;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 25px;
+}
+.visible {
+    position: fixed;
+    left: 0;
+}
+.hamMenuWrap {
+    padding: 110px 10px;
+    display: flex;
+}
+.container {
+    position: relative;
+    overflow-x: hidden;
+}
+.hamActive {
+    overflow: hidden;
+    
+}
+.ham-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ham-item {
+    font-style: oblique;
+    font-family: sans-serif;
+    &_inprogress {
+        filter: blur(.8px)
+    }
+}
+.flag-svg {
+    width: 30px;
+    height: 30px;
+}
+.contries-list {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );    
+    gap: 10px;
+}
+.region {
+    position: relative;
+}
+.regImg {
+    position: absolute;
+    z-index: 0;
+}
+.regionsList {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );    
+    gap: 10px;
+}
+.countruies-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &__img {
+        width: 20px;
+        height: 20px;
+        background: inherit;
+    }
+    &_inprogress {
+        filter: blur(.8px)
+    }
+}
+.ham {
+    display: flex;
+    &__span {
+        height: 3px;
+        width: 30px;
+        background-color: lightgrey;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        z-index: 5;
+        transition: .4s;
+    }
+    span:nth-child(1) {
+        top: 15px;
+    }  
+    span:nth-child(3) {
+        top: 25px;
+    }
+    &.active span:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(45deg);
+        top: 17px;
+        left: 20px;
+    }
+    &.active span:nth-child(2) {
+        opacity: 0;
+    }
+    &.active span:nth-child(3) {
+        top: 14px;
+        left: 20px;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+}
+details {
+    transition: height 1s ease-in;
+}
+.inProgress {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+.pageImg {
+    height: 200px;
+}

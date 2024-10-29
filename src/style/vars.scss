@@ -1,0 +1,31 @@
+$mobileWidth: 768px;
+$tabletWidth: 800px;
+$desctopWidth: 1200px;
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: $desctopWidth;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+img {
+    display: block; /* or inline */
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.heading-reg {
+    font-weight: 800;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    text-align: center;
+}
