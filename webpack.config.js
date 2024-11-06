@@ -34,6 +34,10 @@ module.exports = {
       template: './src/price.html',
       filename: 'price.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/sherry.html',
+      filename: 'sherry.html',
+    }),
   ],
 
   devServer: {
